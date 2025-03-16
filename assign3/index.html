@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A pizzaria that has italian chefs with their signature ingredients to bring delicious taste to your table">
+    <meta name="owner" content="The Crippa's Brothers">
+    <link rel="shortcut icon" href="img/pizza_favicon.png" type="image/x-icon">
+    <title>Pizza al Forno | Assignment 3 | COMP1073 Client-Side JavaScript</title>
+    <script src="js/scripts.js" defer></script>
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div>
+        <p id="myStudentId"></p>
+    </div>
+    
+    <header id="header">
+        <nav class="nav">
+            <a href="index.html" id="logo-link"><img src="./img/logo1.png" alt="logo" id="logo"></a>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#intro">Our Story</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </menu>
+            
+        </nav>
+    </header>
+    
+    <main>
+        <a href="index.html" id="logo-link"><img src="./img/logo1.png" alt="logo" id="logo"></a>
+        <div class="intro" id="intro">
+            <section class="section">
+                <h2>Our Story</h2>
+                <img src="img/restaurant.jpeg" alt="restaurant" width="100%">
+                <p>Our restaurant in 1978<a href="https://orders.co/blog/italian-restaurant-design/"></a></p>
+                <p>We started our restaurant in 1978, and since then we are always improving. Moving to Canada in 2000 was a big challenge, but we believed in it, and we try our best to become better every day. Our goal is to provide the best pizza of the world, it is the one that our customers deserve.</p>
+            </section>
+            <section class="section">
+                <h2>Ingredients</h2>
+                <img src="img/ingredients.jpeg" alt="ingredients" width="100%">
+                <p>We take care of our ingredients, it is our law<a href="https://ferlitos.com/ferlitos-a-local-tradition-of-delicious-spaghetti-and-meatballs/"></a></p>
+                <p>We are the ones who plant and take care of every ingredient provided by our kitchen. We make sure that every detail of our product is taken care of with love, and more importantly, that we get them on time. Super fresh!</p>
+            </section>
+            <section class="section">
+                <h2>Family Business</h2>
+                <img src="img/owners.jpeg" alt="owners" width="100%">
+                <p>We take pride in our family business<a href="https://www.palmspringslife.com/the-story-behind-marios-italian-cafes-owner-mario-del-guidice-talks-family/"></a></p>
+                <p>The Crippa's Brothers: Enrico, Matteo, and Leonardo Crippa worked hard to make their dreams come true. They believed that bringing their knowledge and experience to America would change many lives.</p>
+                <p>It is their lives.</p>
+            </section>
+        </div>
+        <div class="order" id="order">
+            <h2>Order here</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="fName">First Name</label>
+                        <input type="text" name="fName" id="fName" size="25" maxlength="50" placeholder="Type first name" required>
+                    </div>
+                    <div>
+                        <label for="lName">Last Name</label>
+                        <input type="text" name="lName" id="lName" size="25" maxlength="50" placeholder="Type last name"required>
+                    </div>
+                    <div>
+                        <label for="address">Address Line</label>
+                        <input id="address" type="text" name="address" required/>
+                    </div>
+                    <div>
+                        <label for="postal code">Postal Code</label>
+                        <input id="postalcode" type="text" name="postal code" required/>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="" name="phone" required/>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="" name="email" required/>
+                                        
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Create your own pizza</legend>
+                    <div>
+                        <label for="size">Size (number of slices):</label>
+                        <select name="size" id="size" >
+                            <option value="6">Small (6 slices)</option>
+                            <option value="10">Medium (10 slices) </option>
+                            <option value="14">Large (14 slices)</option>
+                            <option value="18">Extra Large (18 slices)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="crust">Crust:</label>
+                        <select name="crust" id="crust">
+                            <option value="pan">Pan</option>
+                            <option value="thin">Thin Crust</option>
+                            <option value="thick">Thick Crust</option>
+                            <option value="handmade">Handmade</option>
+                            <option value="stuffed">Stuffed</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sauce">Sauce</label>
+                        <select name="sauce" id="sauce">
+                            <option value="pizza">Pizza sauce</option>
+                            <option value="bbq">BBQ Sauce</option>
+                            <option value="alfredo">Alfredo</option>
+                            <option value="garlic">Garlic</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="meats">Meats:</label><br>
+                        <input type="checkbox" name="meats" value="Pepperoni"> Pepperoni<br>
+                        <input type="checkbox" name="meats" value="Sausage"> Sausage<br>
+                        <input type="checkbox" name="meats" value="Ham"> Ham<br>
+                        <input type="checkbox" name="meats" value="Bacon"> Bacon<br>
+                        <input type="checkbox" name="meats" value="Chicken"> Chicken<br>
+                        <input type="checkbox" name="meats" value="Steak"> Steak<br>
+                    </div>
+                    <div>
+                        <label for="v&m">Veggies and more:</label><br>
+                        <input type="checkbox" name="v&m" value="Cheddar"> Cheddar<br>
+                        <input type="checkbox" name="v&m" value="Feta"> Feta<br>
+                        <input type="checkbox" name="v&m" value="Parmesan"> Parmesan<br>
+                        <input type="checkbox" name="v&m" value="Provolone"> Provolone<br>
+                        <input type="checkbox" name="v&m" value="Olives"> Olives<br>
+                        <input type="checkbox" name="v&m" value="Mushrooms"> Mushrooms<br>
+                        <input type="checkbox" name="v&m" value="Pineapple"> Pineapple<br>
+                        <input type="checkbox" name="v&m" value="Tomatoes"> Tomatoes<br>
+                    </div>
+                    <div>
+                        <label for="bake">Bake:</label>
+                        <select name="bake" id="bake">
+                            <option value="lightly">Lightly Done</option>
+                            <option value="normal">Normal Bake</option>
+                            <option value="well">Well Done</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="shape">Shape:</label>
+                        <select name="shape" id="shape">
+                            <option value="pie">Pie Cut</option>
+                            <option value="square">Square Cut</option>
+                            <option value="uncut">Uncut</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p><label for="switch">Choose:</label></P>
+                        <input type="radio" id="takeout" name="switch" value="takeout">
+                        <label for="takeout">Take Out</label><br>
+                        <input type="radio" id="delivery" name="switch" value="delivery">
+                        <label for="delivery">Delivery</label><br>
+                        <input type="radio" id="eat_in" name="switch" value="eat_in">
+                        <label for="eat_in">Eat In</label><br>
+                    </div>
+                </fieldset>
+                <div id="error-messages"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <fieldset>
+            <div id="order-summary"></div>
+        </fieldset>
+        
+    </main>
+    <footer>
+        <P>Please do not hesitate to contact us for any further information</P>
+        <div class="footer-section" id="contact">
+            <fieldset class="section-2">
+                <legend>Contact Information</legend>
+                    <div>
+                        <p>Address: 5 John Paul Street, </p>
+                        <p>Toronto, Canada. M0M 8T8</p>
+                    </div>
+                    <div>
+                        <p>pizzaalforno@hotmail.com</p>
+                    </div>
+                    <div>
+                        <p>(416) 005-6541</p>	
+                    </div>
+            </fieldset>
+            <fieldset class="section">
+                <legend>Hours of operation</legend>
+                    <div>
+                        <p>Monday - closed</p>
+                        <p>Tuesday-Saturday, from 11AM to 11PM.</p>
+                        <p>Sunday, from 12PM to 6PM.</p>
+                    </div>
+            </fieldset>
+        </div>
+        
+    </footer>
+ </body>
+</html>

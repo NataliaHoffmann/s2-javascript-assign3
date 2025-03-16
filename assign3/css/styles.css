@@ -1,0 +1,114 @@
+
+header {
+    padding: 20px 40px; /* Padding around the header */
+    display: flex; /* Display flex - side-by-side */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100vw; /* Full width */
+	background-color: white; /* white background*/
+}
+
+#header {
+    position: sticky; /* keeping the header fixed throught the page */
+    top: 0; /* all the all at the tope*/
+    background-color: white;/* white background*/
+    z-index: 1000;/* on top of everything */
+    padding: 10px 0; /* padding */
+    width: 100%; /* Full width */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between; /* space it out */
+    align-items: center; /* center items */
+    width: 100%;
+    margin: 0 ;
+}
+
+.nav img {
+    width: 150px; /* Adjust logo size  because it was too big */
+    height: auto; /* height auto to not deform the img */
+    margin: 0 20px; /* Add margin left-right but no top-bottom */
+}
+
+.nav menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none; /* removing list style (topics) */
+    justify-content: space-evenly; /* Distribute menu items evenly */
+    width: auto; /* Let the menu take up necessary space */
+}
+
+.nav menu li {
+    padding: 0 20px; /* Adding space between menu items */
+}
+
+header li a {
+    color: #0e0e0e;
+}
+
+header li a:hover {
+    border-bottom: solid 2px #cf2e2e; /* Hover effect for underline */
+}
+body {
+	text-align: center; 
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* font-family */
+	font-size: 150%; /* font-size */
+	line-height: 1.4; /* height */
+	margin-left: auto;
+	margin-right: auto;
+}
+main {
+    margin-top: 20px; 
+    padding: 20px;
+}
+h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: italic;
+	color: #e62c22;
+}
+/* Intro part */
+.intro {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures full container width */
+    gap: 20px; /* Space between sections */
+	padding: 0 20px;
+}
+
+/* Each section */
+.section {
+    flex: 1 1 30%; /* There are 3 section so each will take 30% */
+    padding: 10px;
+    min-width: 300px; /* Prevents sections from being too narrow */
+}
+.section img {
+    width: 100%; /* The images take the full width of the section */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+form div{
+    padding: 20px;
+}
+#error-messages{
+    color: red; 
+    font-weight: bold;
+}
+footer{
+	margin-top: 20px; 
+    padding: 20px;
+}
+.footer-section {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    gap: 10px;
+	padding: 0 20px;
+}
+.section-2 {
+    flex: 70%; /* This section is a little bigger so since the other one is taking 30% I set this one to take 70% */
+    box-sizing: border-box; 
+    padding: 10px;
+    min-width: 250px; 
+}
